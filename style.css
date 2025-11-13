@@ -1,0 +1,135 @@
+/* Basic reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto;
+  color: #222;
+  line-height: 1.45;
+}
+
+/* Utility */
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+/* Header */
+.site-header {
+  background: #f7f3f3;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+}
+.site-header .header-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 40px; /* manual padding */
+}
+.logo {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+/* Nav */
+.nav-links a {
+  margin-left: 24px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+}
+.menu-btn {
+  display: none;
+  font-size: 1.4rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Mobile menu */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  padding: 12px;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+.mobile-menu a {
+  padding: 8px 0;
+  text-decoration: none;
+  color: #111;
+  font-weight: 600;
+}
+.mobile-menu.active { display: flex; }
+
+/* Hero with background block */
+.hero {
+  padding: 120px 0;
+  background: #b9b9ef;   /* your color */
+  min-height: 80vh;      /* ⭐ makes it tall like a landing page */
+  display: flex;
+  align-items: center;
+}
+
+.hero-content h1 {
+  font-size: clamp(3rem, 6vw, 4.5rem); /* Bigger & responsive */
+  margin-bottom: 20px;
+  color: #1a1a2e;
+  font-weight: 800;
+}
+
+.hero-content p {
+  font-size: 1rem;
+  max-width: 650px;
+  margin: 0 auto 20px;
+  color: #374151;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-right: 10px;
+  display: inline-block;
+}
+.btn.primary {
+  background: #4f46e5;
+  color: #fff;
+}
+.btn.ghost {
+  border: 2px solid #4f46e5;
+  color: #4f46e5;
+  background: transparent;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid rgba(0,0,0,0.05);
+  padding: 20px 0;
+}
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social a {
+  margin-left: 12px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Responsive */
+@media (max-width:768px) {
+  .nav-links { display: none; }
+  .menu-btn { display: block; }
+  .mobile-menu { display: flex; }
+  .footer-row { flex-direction: column; gap: 12px; }
+}
+
