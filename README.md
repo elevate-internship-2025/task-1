@@ -3,6 +3,7 @@
 This repository contains my submission for Task 1 of the Web Development Internship.  
 
 📌 Requirements Completed
+
 ✔ Created `index.html` and `style.css`  
 ✔ Added header with logo and navigation links  
 ✔ Designed hero section with heading, paragraph, and buttons  
