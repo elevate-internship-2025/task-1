@@ -70,14 +70,14 @@ body {
 /* Hero with background block */
 .hero {
   padding: 120px 0;
-  background: #b9b9ef;   /* your color */
-  min-height: 80vh;      /* ⭐ makes it tall like a landing page */
+  background: #b9b9ef;   
+  min-height: 80vh;      
   display: flex;
   align-items: center;
 }
 
 .hero-content h1 {
-  font-size: clamp(3rem, 6vw, 4.5rem); /* Bigger & responsive */
+  font-size: clamp(3rem, 6vw, 4.5rem); 
   margin-bottom: 20px;
   color: #1a1a2e;
   font-weight: 800;
@@ -132,4 +132,5 @@ body {
   .mobile-menu { display: flex; }
   .footer-row { flex-direction: column; gap: 12px; }
 }
+
 
